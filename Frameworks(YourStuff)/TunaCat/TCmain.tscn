@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://da0katvbbb3k7"]
+
+[ext_resource type="Script" uid="uid://dsk7tl530wfok" path="res://Frameworks(YourStuff)/TunaCat/t_cmain.gd" id="1_o15vm"]
+[ext_resource type="Script" uid="uid://cx2ard7dv0i35" path="res://Frameworks(YourStuff)/TunaCat/cat.gd" id="2_agagh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5yy8h"]
+size = Vector2(80.00006, 173.00006)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ujgae"]
+size = Vector2(110.5, 199.5)
+
+[node name="Node2D" type="Node2D" unique_id=101546799]
+script = ExtResource("1_o15vm")
+
+[node name="Cat" type="CharacterBody2D" parent="." unique_id=1802137130]
+position = Vector2(808.49994, 642.99994)
+script = ExtResource("2_agagh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cat" unique_id=316961720]
+position = Vector2(-0.23303223, -0.26416016)
+shape = SubResource("RectangleShape2D_5yy8h")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=383183429]
+position = Vector2(277.86057, 267.43066)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1826974045]
+position = Vector2(-225.86057, 279.56934)
+shape = SubResource("RectangleShape2D_ujgae")
+
+[node name="Area2D3" type="Area2D" parent="." unique_id=552090030]
+position = Vector2(1003.6434, 335.59314)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3" unique_id=2059688448]
+position = Vector2(99.3566, 213.40686)
+shape = SubResource("RectangleShape2D_ujgae")

@@ -12,6 +12,7 @@ config_version=5
 
 config/name="UMDrioWare"
 run/main_scene="uid://n73cmic5pigu"
+config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="uid://csn2jbd74g3rq"
 
 [autoload]
